@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+	console.log(4);
+
+function here() {
+	alert("----");
+	window.focus();
+}
+
+var objWin; 
+function openUrl() {
+            var target = "bbb.html"; 
+            if (objWin == null || objWin.closed) {
+		objWin = window.open(target,'hello'); 
+            } else { 
+		objWin.focus(); 
+            } 
+            
+        }
+
+
+</script>
+</head>
+<body>
+<a href="javascript:openUrl()">PageA</a>
+<output id="output"></output>
+
+
+</body>
+</html>
